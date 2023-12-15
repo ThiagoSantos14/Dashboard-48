@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="https://img.freepik.com/free-icon/pie-chart_318-372376.jpg?w=2000">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="foto-aside-esquerdo">
+            <img src="img-aside-dashboard.jpg" alt="foto-notebook-com-dashboard">
+        </div>
+
+        <div>
+            <p class="mensagem-error"></p>
+        </div>
+        
+        <div class="container-aside-direito">
+            <img src="foto-login.jpg" alt="Logotipo-de-cadastro">
+        </div>
+
+        <div class="titulo-login">
+            <h1>LOGIN</h1>
+        </div>
+
+        <div class="container-user-admin">
+            <a href="#" target="_self" class="btn-user"><span>User</span></a>
+            <a href="#" target="_self" class="btn-admin"><span>Admin</span></a>
+        </div>
+        
+        <form action="" method="get" enctype="application/x-www-form-urlencoded" class="form">
+            <div class="inputs">
+                <input type="text" name="input-hidden1" class="input-hidden1" required placeholder="Selecione uma opção acima" maxlength="6" onkeypress="mascara('######', this)">
+
+                <input type="text" name="input-hidden2" class="input-hidden2" required placeholder="Selecione uma opção acima" maxlength="13" onkeypress="mascara('###.###.###-##', this)" style="display: none;">
+
+                <input type="email" name="email" placeholder="Email:" required class="input-email">
+
+                <input type="password" name="senha" placeholder="Password:" required class="input-password">
+
+                <div class="container-btn">
+                    <div class="btn-login">
+                        <a href="tela-adm.html" target="_self"><span>Login</span></a>
+                    </div>
+
+                    <div class="btn-cadastro">
+                        <a href="#" target="_self" class="btn-cadastro"><span>Cadastro</span></a>
+                    </div>
+                </div>
+        </form>
+
+        <div class="secao-cadastro">
+            <button type="button"><a href="cadastro-user.html"><span>Funcionario</span></a></button>
+            <button type="button"><a href="cadastro-adm.html"><span>Administrador</span></a></button>
+        </div>
+
+        <script src="login.js"></script>
+        <script src="mascaras.js"></script>
+    </body>
+</html>
