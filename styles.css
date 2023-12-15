@@ -1,0 +1,473 @@
+@font-face {
+    src: url(canadian.woff);
+    font-family: 'canadian';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'canadian';
+}
+
+body {
+    position: relative;
+    background: #A8A2A2;
+    height: 100vh;
+}
+
+.foto-aside-esquerdo img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100vh;
+}
+
+.mens-error {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -33%;
+    color: red;
+    margin-left: -37vh;
+}
+
+.container-aside-direito {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 77%;
+    margin-top: -94vh;
+}
+
+.container-aside-direito img {
+    width: 100px;
+    mix-blend-mode: multiply;
+    border-radius: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 85%;
+}
+
+.titulo-login h1 {
+    display: flex;
+    justify-content: center;  
+    letter-spacing: 10px;
+    margin-top: 3%;
+    margin-left: 49%;
+}
+
+.container-user-admin {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 4vh;
+    margin-left: -36vh;
+}
+
+input[type='text'] {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 4%;
+    margin-bottom: 30px;
+    margin-left: 66.8%;
+}
+
+.display-hidden-off {
+    display: none;
+}
+
+input[type='email'] {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-bottom: 30px;
+}
+
+input[type='email']:hover {
+    border: double 5px black;
+    transition: 0.5s;
+}
+
+input[type='password'] {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+input[type='password']:hover {
+    border: double 5px black;
+    transition: 0.5s;
+}
+
+input::placeholder {
+    color: black;
+    text-transform: uppercase
+}
+
+.error-input {
+    border: groove 3px red;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3vh;
+    margin-right: 11vh;
+    width: 100vh;
+    gap: 30px;
+}
+
+.container-btn a:hover {
+    background: black;
+    color: white;
+    transition: all 0.9s;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    width: 15vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.secao-cadastro a:hover {
+    color: white;
+    transition: all 0.9s;
+}
+
+.btn-login a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    background: white;
+    color: black;
+    border:  groove 1px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-cadastro a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    background: white;
+    color: black;
+    border:  groove 1px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.secao-cadastro {
+    display: none;
+    margin-top: 2vh;
+    margin-right: 4vh;
+    text-decoration: none;
+}
+
+.secao-cadastro button:hover {
+    background: black;
+    transition: all 0.9s;
+}
+
+.display-secao-cadastro {
+    display: block;
+    margin-top: 2vh;
+    margin-right: 4vh;
+}
+
+.display-secao-cadastro button:hover, a:hover {
+    color: white;
+    background: black;
+    transition: all 0.9s;
+}
+
+.secao-cadastro {
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    .foto-aside-esquerdo {
+        visibility: hidden;
+    }
+
+    .mens-error {
+        margin-top: -65vh;
+        margin-left: -10vh;
+    } 
+
+    .container-aside-direito {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titulo-login {
+        display: flex;
+        justify-content: center;
+        width: 69%;
+    }
+
+    .container-user-admin {
+        display: flex;
+        justify-content: center;
+        width: 119vh;
+        font-size: 20px;
+    }
+
+    .form {
+        margin-top: 10%;
+        margin-left: -63vh; 
+    }
+
+    input[type='text'] {
+        width: 350px;
+    }
+
+    input[type='email'] {
+        width: 350px;
+    }
+
+    input[type='password'] {
+        width: 350px;
+    }
+
+    .container-btn a {
+        margin-top: 3%;
+        margin-right: 5vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    .foto-aside-esquerdo {
+        visibility: hidden;
+    }
+
+    .mens-error {
+        margin-top: -69vh;
+        margin-left: -30vh;
+    } 
+
+    .container-aside-direito {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titulo-login {
+        display: flex;
+        justify-content: center;
+        width: 68%;
+    }
+
+    .container-user-admin {
+        display: flex;
+        justify-content: center;
+        width: 159vh;
+        font-size: 20px;
+    }
+
+    .form {
+        margin-left: -76vh; 
+    }
+
+    input[type='text'] {
+        width: 330px;
+    }
+
+    input[type='email'] {
+        width: 330px;
+    }
+
+    input[type='password'] {
+        width: 330px;
+    }
+
+    .container-btn {
+        margin-right: 15vh;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    .foto-aside-esquerdo {
+        visibility: hidden;
+    }
+
+    .mens-error {
+        margin-top: -75vh;
+        margin-left: -22vh;
+        font-size: 25px;
+    } 
+
+    .container-aside-direito {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titulo-login {
+        display: flex;
+        justify-content: center;
+        width: 69%;
+        font-size: 25px;
+    }
+
+    .container-user-admin {
+        display: flex;
+        justify-content: center;
+        width: 150vh;
+        font-size: 20px;
+        margin-bottom: 5vh;
+    }
+
+    .form {
+        margin-top: -5vh;
+        margin-left: -60vh; 
+    }
+
+    input[type='text'] {
+        width: 390px;
+    }
+
+    input[type='email'] {
+        width: 390px;
+    }
+
+    input[type='password'] {
+        width: 390px;
+    }
+
+    input::placeholder {
+        font-size: 20px;
+    }
+
+    .container-btn a {
+        margin-right: 1vh;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    .mens-error{
+        margin-top: -73vh;
+        margin-left: -13vh;
+    }
+
+    .container-aside-direito img {
+        margin-right: 1vh;
+    }
+
+    .titulo-login {
+        margin-top: -1vh;
+        margin-right: 5vh;
+    }
+
+    .container-user-admin {
+        margin-left: -8vh;
+    }
+
+    .form {
+        margin-left: -39vh;
+    }
+
+    .container-btn {
+        margin-right: 5vh;
+    }
+
+    .secao-cadastro {
+        display: flex;
+        width: 21vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+    html, body {
+        overflow: hidden;
+    }
+
+    .mens-error{
+        margin-top: -68vh;
+        margin-left: -30vh;
+    }
+
+    .container-aside-direito img {
+        margin-left: 10vh;
+    }
+
+    .titulo-login {
+        margin-top: -1vh;
+        margin-right: 1vh;
+    }
+
+    .container-user-admin {
+        margin-left: -33vh;
+    }
+
+    .form {
+        margin-left: 15vh;
+    }
+
+    .container-btn {
+        margin-right: 11vh;
+    }
+
+    .secao-cadastro {
+        display: flex;
+        width: 30vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
+
+
+
