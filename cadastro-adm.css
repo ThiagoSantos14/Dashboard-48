@@ -1,0 +1,83 @@
+@font-face {
+    src: url(canadian.woff);
+    font-family: 'canadian';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'canadian';
+}
+
+body {
+    height: 100vh;
+    background: #A8A2A2;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    color: white;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 50px;
+}
+
+input[type='text'] {
+    width: 45vh;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+input[type='email'] {
+    width: 45vh;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+input[type='password'] {
+    width: 45vh;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+input[type='number'] {
+    width: 45vh;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    background: gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+span:hover {
+    background: black;
+    transition: all 0.9s;
+}
