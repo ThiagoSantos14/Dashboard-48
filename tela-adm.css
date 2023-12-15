@@ -1,0 +1,442 @@
+@font-face {
+    src: url(canadian.woff);
+    font-family: 'canadian';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'canadian';
+    text-transform: capitalize;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #A8A2A2;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.search {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    position: absolute;
+}
+
+.search img {
+    width: 3vh;
+    margin-right: 28%;
+    position: absolute;
+}
+
+.search-all {
+    padding-left: 7.5vh;
+    font-size: 25px;
+}
+
+.search-hidden {
+    display: none;
+}
+
+.search-block {
+    display: block;
+}
+
+input[type='text'] {
+    width: 35%;
+    height: 35px;
+    border-radius: 50px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.menudrop {
+    display: flex;
+    justify-content: flex-end;
+    height: 15vh;
+}
+
+ul img {
+    width: 20%;
+    border-radius: 100%;
+    mix-blend-mode: multiply;
+    margin-top: 1vh;
+    margin-left: 11%;
+}
+
+li {
+    display: none;
+    list-style: none;
+    width: 45%;
+    background-color: gray;
+    justify-content: center;
+    border: groove 1px black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.links li {
+    display: none;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.display-links-on li {
+    display: flex; 
+}
+
+.display-links-off li {
+    display: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background: #808080;
+    margin-top: 10vh;
+}
+
+.container1 {
+    display: none;
+}
+
+.container-produto1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-produto2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-produto3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produtos {
+    display: flex;
+    align-items: flex-end;
+    width: 60vh;
+    height: 30vh;
+    background: white;
+    border: groove 1px black;
+    margin-bottom: 1vh;
+    padding-left: 1vh;
+    padding-bottom: 1vh;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vh;
+    height: 27.5vh;
+    background: rgb(219, 217, 217);
+    margin-top: 6vh;
+}
+
+.fotos:hover {
+    border: groove 1px black;
+}
+
+.container-text-quantidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vh;
+    height: 25vh;
+    align-items: center;
+}
+
+.container-quantidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vh;
+    height: 17vh;
+    align-items: center;
+}
+
+.container-estoque-produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-text-estoque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vh;
+    height: 17vh;
+    align-items: center;
+}
+
+#input-text-1 {
+    width: 200px;
+}
+
+#input-text-2 {
+    width: 200px;
+}
+
+#input-text-3 {
+    width: 200px;
+}
+
+#input-text-4 {
+    width: 200px;
+}
+
+#input-text-5 {
+    width: 200px;
+}
+
+#input-text-6 {
+    width: 200px;
+}
+
+#input-text-7 {
+    width: 200px;
+}
+
+#input-text-8 {
+    width: 200px;
+}
+
+#input-text-9 {
+    width: 200px;
+}
+
+#input-text-10 {
+    width: 200px;
+}
+
+#input-text-11 {
+    width: 200px;
+}
+
+#input-text-12 {
+    width: 200px;
+}
+
+#input-text-13 {
+    width: 200px;
+}
+
+#input-text-14 {
+    width: 200px;
+}
+
+#input-text-15 {
+    width: 200px;
+}
+
+#input-text-16 {
+    width: 200px;
+}
+
+#input-text-17 {
+    width: 200px;
+}
+
+#input-text-18 {
+    width: 200px;
+}
+
+button {
+    margin-top: 3vh;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button:hover {
+    background: white;
+    transition: all 0.5s;
+    transform: scale(0.9);
+}
+
+.container2 {
+    display: none;
+}
+
+.display-container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-estoque2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container3 {
+    display: none;
+}
+
+.display-container3 {
+    display: flex;
+}
+
+.informacoes {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.valor-vendas {
+    display: flex;
+    width: 40vh;
+    height: 11vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.valor-estoque {
+    display: flex;
+    width: 40vh;
+    height: 11vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.container-status-vendas {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.status-vendas {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    background: white;
+    margin-top: 5%;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7vh;
+    padding-top: 1vh;
+}
+
+@media (max-width: 480px) {
+    .search {
+        width: 600px;
+        margin-top: 3vh;
+        margin-left: -19vh;
+    }
+
+    .menudrop img {
+        width: 60px;
+        margin-top: 2vh;
+        margin-left: -12vh;
+    }
+
+    .menudrop li {
+        width: 140px;
+        height: 2.5vh;
+        margin-top: 0.9vh;
+        padding-bottom: 2.1vh;
+        margin-left: -17vh;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .search {
+        margin-left: -23vh;
+    }
+
+    .menudrop a {
+        margin-top: -0.1vh;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produtos {
+        width: 50vh;
+    }
+
+    .container-produto1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-estoque2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos {
+        width: 20vh;
+    }
+
+    .valor-vendas h1 {
+        font-size: 20px;
+    }
+
+    .valor-estoque h1 {
+        font-size: 20px;
+    }
+
+    .status-vendas h1 {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
