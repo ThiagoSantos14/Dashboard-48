@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://img.freepik.com/free-icon/pie-chart_318-372376.jpg?w=2000">
+        <link rel="stylesheet" href="cadastro-user.css">
+        <title>Cadastro Usúario</title>
+    </head>
+    <body>
+        <div class="titulo">
+            <h1>CREATE</h1>
+            <h2>Account</h2>
+        </div>
+
+        <div class="cadastro">
+            <input type="text" name="name" required placeholder="ID-USER:" maxlength="22">    
+            <input type="email" name="email" required placeholder="EMAIL:">
+            <input type="password" name="password" required placeholder="PASSWORD:" maxlength="15">
+            <input type="text" name="cpf" required placeholder="CPF:" maxlength="13" onkeypress="mascara('###.###.###-##', this)">
+            <a href="#" target="_self"><span>TO CREATE</span></a>
+        </div>
+
+        <script src="mascaras.js"></script>
+    </body>
+</html>
